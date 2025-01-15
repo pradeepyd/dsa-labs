@@ -13,7 +13,7 @@ struct CircularQueue
         printf("Queue is full\n");
     }else{
         Q->data[Q->rear] = element;
-        Q->rear = (Q->rear+=1)%MAX;
+        Q->rear = (Q->rear + 1)%MAX;
         printf("%d was ENQUEUED!\n",element);
     }
  }
